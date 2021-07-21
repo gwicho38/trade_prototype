@@ -1,0 +1,19 @@
+{
+  "name": "trade_prototype",
+  "version": "1.0.0",
+  "description": "Trading prototype to function as bot trader.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "start-watch": "nodemon server.js -e ejs,js,css,html,jpg,png,scss"
+  },
+  "author": "gwicho38",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "jsdoc": "^3.6.7",
+    "link": "^0.1.5",
+    "nodemon": "^2.0.12"
+  }
+}
