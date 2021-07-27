@@ -36,17 +36,17 @@ app.use((req, res, next) => {
 });
 
 //set static files
-app.use(express.static(__dirname + '/client/public'));
+app.use(express.static(__dirname + '/'));
 
 /*** Routes   ***/
 //set get / route to index.html
 app.get('/', function (req, res) {
-    res.sendFile(__dirname + '/index.html');
+    res.send("Hello");
 });
 
 //set default route for *
 app.get('*', function (req, res) {
-    res.sendFile(__dirname + '/index.html');
+    res.send("Hello");
 });
 
 //start server
