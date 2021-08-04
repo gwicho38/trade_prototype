@@ -72,3 +72,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ### GENERATE NEW REACT COMPONENT
 https://www.npmjs.com/package/generate-react-cli
+
+### react-router-dom
+https://reactrouter.com/web/guides/quick-start
+
+### material ui core and icons
+https://github.com/mui-org/material-ui
