@@ -2,41 +2,23 @@ import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import SearchIcon from '@material-ui/icons/Search';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
-import {
-  Row, Col,
-  Card, CardBody,
-  CardTitle, Nav, NavItem, NavLink
-} from 'reactstrap';
 import { Link, Switch, Route } from 'react-router-dom';
+// or less ideally
+import { Navbar, Nav, Container } from 'react-bootstrap';
 import styles from './NavBar.module.css';
 
 // NavBar React
 const NavBar = () => (
-  <Fragment>
-    <ReactCSSTransitionGroup
-      component="div"
-      transitionName="TabsAnimation"
-      transitionAppear={true}
-      transitionAppearTimeout={0}
-      transitionEntclearer={false}
-      transitionLeave={false}>
-
-      <Row>
-        <Col sm={12}>
-          <Card className="main-card mb-3">
-            <CardBody>
-              <CardTitle>Horizontal Menu</CardTitle>
-              <Nav>
-                {/* TODO: create switch statement for home */}
-                <NavLink active href="/">Link</NavLink>
-              </Nav>
-            </CardBody>
-          </Card>
-        </Col>
-      </Row>
-
-    </ReactCSSTransitionGroup>
-  </Fragment >
+  <Navbar bg="light" variant="light">
+    <Container>
+      <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+      <Nav className="me-auto">
+        <Nav.Link href="#home">Home</Nav.Link>
+        <Nav.Link href="#features">Features</Nav.Link>
+        <Nav.Link href="#pricing">Pricing</Nav.Link>
+      </Nav>
+    </Container>
+  </Navbar>
 );
 
 NavBar.propTypes = {};
